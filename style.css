@@ -1,0 +1,268 @@
+/*********main settings**********/
+
+:root{
+    --primary: #292C45;
+    --secondary: #FF7C1E;
+    --thr: #fff;
+    font-size: 1rem;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--thr);
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+#mobile{
+    display: none;
+}
+#burger{
+    display: none;
+}
+section{
+    padding: 30px 0;
+ 
+}
+
+a{
+    text-decoration: none;
+    color: var(--thr);
+}
+h1, h2, h5{
+    text-transform: uppercase;
+}
+
+button{
+    text-transform: uppercase;
+}
+
+header div, ul, li,section, article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*********HEADER**********/
+
+header:first-child{
+    background: var(--primary);
+}
+header div{
+    width: 100%;
+    height: 50px;
+    margin: 0;
+}
+
+#logo{
+    height: inherit;
+    padding: 10px 0;
+    filter: invert(100%);
+}
+#dekstop, #mobile{
+    background: var(--secondary);
+}
+nav{
+    width: 50%;
+    min-width: fit-content;
+    height:inherit;
+}
+ul{
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    height: inherit;
+}
+li{
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0 10px;
+    height: inherit;
+}
+li:hover{
+    background: var(--primary);
+}
+#header-picture{
+    background: url(./Assets/futuristic_city.jpg)no-repeat center ;
+    background-size: cover;
+    object-fit: contain;
+    width: 100%;
+    height: 650px;
+    border-bottom: 5px solid var(--secondary);
+}
+
+/*********MAIN**********/
+
+main{
+    width: 85%;
+    margin: auto;
+}
+
+section, article{
+
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: auto;
+}
+.presentation{
+    justify-content: center;
+    width: 100%;
+    background: var(--primary);
+    padding: 30px;
+}
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+#contenue{
+    width: 60%;
+}
+#puce{
+    width: 30%;
+}
+.presentation button{
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background: var(--secondary);
+    border-style: none;
+}
+
+/******/
+
+
+h2{
+    color: var(--primary);
+    text-align: left;
+    width: 100%;
+}
+h3{
+    margin: 0;
+}
+
+
+.cards{
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: auto;
+}
+.card{
+    font-size: 0.8em;
+    width: 22%;
+    min-width: 330px;
+    padding: 20px;
+}
+
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+.card-presentation{
+    background: var(--secondary);
+    padding: 15px;
+}
+
+
+/***/
+#farme{
+    height: inherit;
+    width: 50%;
+}
+iframe{
+    height: inherit;
+    width: 100%;
+}
+
+#last-section{
+    background: var(--secondary);
+
+}
+#form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+input{
+    font-size: 1em;
+    padding: 5px;
+}
+textarea{
+    resize: none;
+}
+label{
+    padding-bottom: 5px;
+}
+h5{
+    font-size: 1.4em;
+    text-align: center;
+}
+form{
+    font-size: 0.75em;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+form p{
+    display: flex;
+    flex-direction: column;
+}
+#cordinate{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+form button{
+    width: 30%;
+    padding: 10px;
+    background: var(--primary);
+    margin: auto;
+}
+footer{
+    background: var(--primary);
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75em;
+}
+span{
+    margin: 0 20px;
+}
+
+@media screen and (max-width:415px) {
+
+    .presentation{
+        padding: 5px;
+    }
+    #container, #last-section{
+        flex-direction: column-reverse;
+        width: fit-content;
+        padding-bottom: 10px;
+    }
+    #contenue{
+        width: inherit;
+        text-align: center;
+        font-size: 0.75rem;
+    }
+    #puce{
+        padding: 10px 0;
+    }
+    h2, h1, h5{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    #form, #last-section, form , #farme{
+        width: inherit;
+    }
+    form button{
+        margin: 10px auto;
+    }
+}
